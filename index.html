@@ -293,12 +293,12 @@
     </div>
 
     <script>
+        // Set target date (30 days from initial load)
+        const targetDate = new Date();
+        targetDate.setDate(targetDate.getDate() + 30);
+        
         // Countdown functionality
         function updateCountdown() {
-            // Set target date (30 days from now)
-            const targetDate = new Date();
-            targetDate.setDate(targetDate.getDate() + 30);
-            
             const now = new Date().getTime();
             const distance = targetDate - now;
             
